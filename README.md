@@ -1,3 +1,5 @@
+# E-Commerce Price Tracker
+
 This is an application built to allow the periodic scanning of online webstores, to notify users of changes in prices of items they select.
 
 This application is part of the course "The Complete Python Web Developer", a course for creation of web applications using Python.
