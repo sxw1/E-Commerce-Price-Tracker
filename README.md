@@ -1,7 +1,7 @@
 # E-Commerce Price Tracker
 
 
-Technology stack: Python, MongoDB, Flask, Jinja2, HTML, CSS, Bootstrap, Mailgun.
+Technology Stack: Python, MongoDB, Flask, Jinja2, HTML, CSS, Bootstrap, Mailgun.
 
 
 This is an application built to allow the periodic scanning of online webstores, to notify users of changes in prices of items they select.
@@ -17,5 +17,4 @@ It parses the store websites using requests and BeautifulSoup.
 It does not work with Stores that dynamically inject content using JavaScript.
 
 It allows users to register, log in, and create and modify their alerts.
-
 
