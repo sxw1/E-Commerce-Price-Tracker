@@ -4,13 +4,8 @@ import pymongo
 
 
 class Database:
-    URI = "mongodb://<1>:<1q1q1q>@ds115866.mlab.com:15866/heroku_dw7jj3xj"
-    DATABASE = None
-
-    @staticmethod
-    def initialize():
-        client = pymongo.MongoClient(Database.URI)
-        Database.DATABASE = client.get_default_database()
+    client = pymongo.MongoClient("mongodb://<admin>:<password1>@ds115866.mlab.com:15866/heroku_dw7jj3xj")
+    DATABASE = client.get_default_database()
 
     @staticmethod
     def insert(collection: str, data: Dict) -> None:
