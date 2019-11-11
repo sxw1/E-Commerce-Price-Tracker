@@ -30,8 +30,9 @@ class Store(Model):
 
     @classmethod
     def get_by_url_prefix(cls, url_prefix: str) -> "Store":
-        url_regex = {"$regex": '^{}'.format(url_prefix)}
-        return cls.find_one_by("url_prefix", url_regex)
+        if url_prefix[-1] == '/':
+            url_prefix = url_prefix[:-1]
+        return cls.find_one_by("url_prefix", url_prefix)
 
     @classmethod
     def find_by_url(cls, url: str) -> "Store":
