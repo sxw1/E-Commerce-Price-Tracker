@@ -3,3 +3,4 @@ passlib
 requests
 Flask
 pymongo
+uwsgi
