@@ -28,7 +28,7 @@
         <div class="form-group">
             <label for="query">HTML Query</label>
             <input type="text" class="form-control" id="query" name="query" placeholder='{"class": "price price--large"}'
-                value="{{ store.query }}" aria-describedby="queryHelp">
+                value='{{ store.query | tojson }}' aria-describedby="queryHelp">
             <small id="queryHelp" class="form-text text-muted">
                 What attributes are on the element that contain the price? This is so we can find it on the page.
             </small>
